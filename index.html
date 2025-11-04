@@ -427,11 +427,9 @@
           </ul>
         </div>
         <div class="box-subscribe-vault">
+          <p class="box-social-vault-text">Subscribe</p>
           <form class="box-subscribe-vault-form">
-            <label for="subscribe-email" class="box-social-vault-text"
-              >Subscribe</label
-            >
-            <div class="box-subscribe-vault-form-group">
+            <label class="box-subscribe-vault-form-label">
               <input
                 name="subscribe-email"
                 type="email"
@@ -439,132 +437,125 @@
                 placeholder="E-mail"
                 class="box-subscribe-vault-input"
               />
-              <button type="submit" class="vault-subscribe-submit">
-                <span class="vault-subscribe-submit-text">Subscribe</span>
-                <svg width="24" height="20">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
+            </label>
+            <button type="submit" class="vault-subscribe-submit">
+              <span class="vault-subscribe-submit-text">Subscribe</span>
+              <svg width="24" height="24" class="icon-button-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
     <div class="modal-overlay">
       <div class="modal">
-        <div class="for-modal-callback-widget-close">
-          <button type="button" class="modal-callback-widget-close">
-            <svg class="modal-callback-widget-close-icon" height="8" width="8">
-              <use href="./images/icons.svg#icon-close-callback"></use>
-            </svg>
-          </button>
-        </div>
+        <button type="button" class="modal-callback-widget-close">
+          <svg class="modal-callback-widget-close-icon" height="8" width="8">
+            <use href="./images/icons.svg#icon-close-callback"></use>
+          </svg>
+        </button>
         <p class="modal-callback-widget-form-name">
           Leave your contacts and we will call you back
         </p>
         <form class="modal-callback-widget-form">
           <div class="modal-callback-widget-form-div-input-label">
-            <label
-              for="customer-first-last-name"
-              class="modal-callback-widget-form-label"
+            <label for="user-name" class="modal-callback-widget-form-label"
               >Name</label
             >
             <div class="for-modal-callback-widget-icon-placeholder">
-              <i class="modal-callback-widget-icon-placeholder">
-                <svg
-                  class="modal-callback-widget-icon-placeholder-svg"
-                  height="12"
-                  width="12"
-                >
-                  <use
-                    href="./images/icons.svg#icon-input-placeholder-name"
-                  ></use>
-                </svg>
-              </i>
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-callback-widget-form-input"
+              />
+              <svg
+                class="modal-callback-widget-icon-placeholder-svg"
+                height="24"
+                width="18"
+              >
+                <use
+                  href="./images/icons.svg#icon-input-placeholder-name"
+                ></use>
+              </svg>
             </div>
-            <input
-              type="text"
-              name="customer-first-last-name"
-              id="customer-first-last-name"
-              class="modal-callback-widget-form-input"
-            />
           </div>
           <div class="modal-callback-widget-form-div-input-label">
-            <label for="customer-tel" class="modal-callback-widget-form-label"
+            <label for="user-tel" class="modal-callback-widget-form-label"
               >Phone</label
             >
             <div class="for-modal-callback-widget-icon-placeholder">
-              <i class="modal-callback-widget-icon-placeholder">
-                <svg
-                  class="modal-callback-widget-icon-placeholder-svg"
-                  height="13"
-                  width="13"
-                >
-                  <use
-                    href="./images/icons.svg#icon-input-placeholder-phone"
-                  ></use>
-                </svg>
-              </i>
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="modal-callback-widget-form-input"
+              />
+              <svg
+                class="modal-callback-widget-icon-placeholder-svg"
+                height="24"
+                width="18"
+              >
+                <use
+                  href="./images/icons.svg#icon-input-placeholder-phone"
+                ></use>
+              </svg>
             </div>
-            <input
-              type="tel"
-              name="customer-tel"
-              id="customer-tel"
-              class="modal-callback-widget-form-input"
-            />
           </div>
           <div class="modal-callback-widget-form-div-input-label">
-            <label for="customer-email" class="modal-callback-widget-form-label"
+            <label for="user-email" class="modal-callback-widget-form-label"
               >Email</label
             >
             <div class="for-modal-callback-widget-icon-placeholder">
-              <i class="modal-callback-widget-icon-placeholder">
-                <svg
-                  class="modal-callback-widget-icon-placeholder-svg"
-                  height="12"
-                  width="15"
-                >
-                  <use
-                    href="./images/icons.svg#icon-input-placeholder-mail"
-                  ></use>
-                </svg>
-              </i>
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="modal-callback-widget-form-input"
+              />
+              <svg
+                class="modal-callback-widget-icon-placeholder-svg"
+                height="24"
+                width="18"
+              >
+                <use
+                  href="./images/icons.svg#icon-input-placeholder-mail"
+                ></use>
+              </svg>
             </div>
-            <input
-              type="email"
-              name="customer-email"
-              id="customer-email"
-              class="modal-callback-widget-form-input"
-            />
           </div>
-          <div class="modal-callback-widget-form-div-input-label">
-            <label
-              for="customer-comment"
-              class="modal-callback-widget-form-label"
+          <div class="modal-callback-widget-form-div-input-label fourth">
+            <label for="user-comment" class="modal-callback-widget-form-label"
               >Comment</label
             >
             <textarea
-              name="customer-comment"
-              rows="8"
-              id="customer-comment"
-              class="modal-callback-widget-form-input"
-              style="resize: none"
+              name="user-comment"
+              id="user-comment"
+              class="modal-callback-widget-form-input for-text"
               placeholder="Text input"
             ></textarea>
           </div>
           <div class="modal-callback-widget-form-group-checkbox">
             <input
               type="checkbox"
-              name="customer-privacy-policy"
-              id="customer-privacy-policy"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               class="modal-callback-widget-form-input-checkbox"
             />
             <label
-              for="customer-privacy-policy"
+              for="user-privacy"
               class="modal-callback-widget-form-label-checkbox"
+              ><span class="modal-callback-widget-form-label-checkbox-icon">
+                <svg class="custom-checkbox-icon" height="8" width="10">
+                  <use
+                    href="./images/icons.svg#checkbox-icon"
+                  ></use></svg></span
               >I accept the terms and conditions of the
-              <a href="#" style="color: #404bbf">Privacy Policy</a></label
+              <a href="#" class="modal-callback-widget-form-label-checkbox-link"
+                >Privacy Policy</a
+              ></label
             >
           </div>
           <button type="submit" class="modal-callback-form-submit">Send</button>

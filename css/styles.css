@@ -670,7 +670,7 @@ textarea.modal-callback-widget-form-input {
   display: none;
 }
 
-.modal-callback-widget-form-label-checkbox-icon {
+span {
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
@@ -689,7 +689,7 @@ textarea.modal-callback-widget-form-input {
 .modal-callback-widget-form-group-checkbox:has(
     .modal-callback-widget-form-input-checkbox:checked
   )
-  .modal-callback-widget-form-label-checkbox-icon {
+  span {
   fill: #f4f4fd;
   background-color: #404bbf;
   border: none;

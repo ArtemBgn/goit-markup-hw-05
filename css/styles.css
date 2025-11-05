@@ -615,6 +615,7 @@ header .container {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 
 .modal-callback-widget-form {
@@ -652,7 +653,7 @@ header .container {
 }
 
 .modal-callback-widget-form-input {
-  width: 100%;
+  width: 100%; /*может здесь нужно исправить на width: 264px;*/
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -713,14 +714,20 @@ textarea.modal-callback-widget-form-input {
 }
 
 .modal-callback-widget-form-input-checkbox {
-  border-radius: 50%;
-  margin-right: 8px;
-  visibility: hidden;
+  display: none;
+} /**/
+
+/*.visually-hidden {
+  display: none;
+}*/
+
+input:checked + .modal-callback-widget-form-label-checkbox-icon {
+  background-color: #404bbf;
+  border: none;
 }
 
-.modal-callback-widget-form-input-checkbox:checked + .custom-checkbox-icon {
-  fill: #f4f4fd;
-}
+/*background-color: #404bbf;
+  border: none;*/
 
 .modal-callback-widget-form-label-checkbox {
   margin: 0;
@@ -733,6 +740,7 @@ textarea.modal-callback-widget-form-input {
 .modal-callback-widget-form-label-checkbox-icon {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -769,5 +777,5 @@ textarea.modal-callback-widget-form-input {
 }
 
 .modal-callback-widget-form-label-checkbox-link {
-  color: #404bbf;
+  color: #4d5ae5;
 }

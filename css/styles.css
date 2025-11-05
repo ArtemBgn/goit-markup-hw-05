@@ -35,7 +35,7 @@ ol {
 img {
   display: block;
   max-width: 100%;
-  object-fit: cover; /*можливо треба цю властивість задати не всім зображенням*/
+  object-fit: cover;
 }
 
 .container {
@@ -116,9 +116,9 @@ header .container {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-} /**/
+}
 
-.navbar-list-item-link:focus,/**/
+.navbar-list-item-link:focus,
 .navbar-list-item-link:hover {
   color: #404bbf;
 }
@@ -142,7 +142,7 @@ header .container {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-list-item-link:focus,/**/
+.contacts-list-item-link:focus,
 .contacts-list-item-link:hover {
   color: #404bbf;
 }
@@ -151,9 +151,9 @@ header .container {
   background-color: #2e2f42;
   display: flex;
   justify-content: center;
-  align-items: center; /**/
+  align-items: center;
   padding: 188px 0;
-  max-width: 1440px; /**/
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -163,7 +163,7 @@ header .container {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; /**/
+  background-size: cover;
 }
 
 .heading-title {
@@ -196,7 +196,7 @@ header .container {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.heading-order:focus,/**/
+.heading-order:focus,
 .heading-order:hover {
   background: #404bbf;
 }
@@ -220,26 +220,22 @@ header .container {
 
 .profit-list {
   display: flex;
-  gap: 24px; /**/
+  gap: 24px;
 }
 
 .profit-list-item {
   width: calc((100% - (3 * 24px)) / 4);
-  /*box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); /**/
 }
 
 .box-icon-advantages {
   padding: 24px 100px;
   margin-bottom: 8px;
-  /*width: 100%;/**/
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
-
   display: flex;
   align-items: center;
-  justify-content: center; /**/
+  justify-content: center;
   height: 112px;
 }
 
@@ -292,13 +288,13 @@ header .container {
 .box-icon-team {
   display: flex;
   justify-content: center;
-  gap: 24px; /**/
+  gap: 24px;
   padding-top: 8px;
 }
 
 .box-icon-team-item {
   width: 40px;
-  height: 40px; /**/
+  height: 40px;
 }
 
 .icon-link {
@@ -339,8 +335,6 @@ header .container {
 
 .briefcase-list-item {
   width: calc((100% - (2 * 24px)) / 3);
-  /*position: relative;
-  overflow: hidden;/**/
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -397,7 +391,7 @@ header .container {
 .container-vault {
   display: flex;
   align-items: baseline;
-  justify-content: start; /* изменил расположение в футере */
+  justify-content: start;
 }
 
 .box-logo-vault {
@@ -460,17 +454,9 @@ header .container {
   flex-grow: 2;
 }
 
-/*.box-subscribe-vault-form-group {
-  display: flex;
-  height: 40px;
-}/**/
-
 .box-subscribe-vault-form {
   display: flex;
   gap: 24px;
-}
-
-.box-subscribe-vault-form-label {
 }
 
 .box-subscribe-vault-input {
@@ -507,12 +493,6 @@ header .container {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  /*
-  padding: 8px 24px;
-  flex-grow: 1;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 .vault-subscribe-submit:hover {
@@ -520,13 +500,8 @@ header .container {
 }
 
 .icon-button-send {
-  /*display: block;*/
   margin-left: 16px;
 }
-
-/*.vault-subscribe-submit-text {
-  display: block;
-} /**/
 
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.4);
@@ -540,9 +515,7 @@ header .container {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  pointer-events: none; /**/
-  /*opacity: 1;
-  pointer-events: auto; /**/
+  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -565,16 +538,7 @@ header .container {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
-  /*
-  max-height: 80%;
-  overflow-y: auto;*/
 }
-
-/*.for-modal-callback-widget-close {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 24px;
-}*/
 
 .modal-callback-widget-close {
   position: absolute;
@@ -620,7 +584,6 @@ header .container {
 
 .modal-callback-widget-form {
   margin-bottom: 8px;
-
   display: flex;
   flex-direction: column;
   margin-top: 8px;
@@ -633,11 +596,6 @@ header .container {
 .fourth {
   margin-bottom: 16px;
 }
-
-/*.modal-callback-widget-form-div-input-label {
-  display: flex;
-  flex-direction: column;
-}/**/
 
 .modal-callback-widget-form-label {
   font-size: 12px;
@@ -653,7 +611,7 @@ header .container {
 }
 
 .modal-callback-widget-form-input {
-  width: 100%; /*может здесь нужно исправить на width: 264px;*/
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -664,8 +622,6 @@ header .container {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-
-  /*padding: 8px 32px;*/
 }
 
 .for-text {
@@ -684,15 +640,8 @@ header .container {
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  fill: #2e2f42; /**/
+  fill: #2e2f42;
 }
-
-/*.modal-callback-widget-icon-placeholder {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}*/
 
 .modal-callback-widget-form-div-input-label:has(
     .modal-callback-widget-form-input:focus
@@ -715,18 +664,27 @@ textarea.modal-callback-widget-form-input {
 
 .modal-callback-widget-form-input-checkbox {
   display: none;
-} /**/
+}
 
 .visually-hidden {
   display: none;
 }
 
-/*.modal-callback-widget-form-group-checkbox:has(input:checked)
-  .modal-callback-widget-form-label-checkbox-icon {
-  fill: #f4f4fd;
-  background-color: #404bbf;
-  border: none;
-}*/
+.modal-callback-widget-form-label-checkbox-icon {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-color: transparent;
+  fill: transparent;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .modal-callback-widget-form-group-checkbox:has(
     .modal-callback-widget-form-input-checkbox:checked
@@ -737,44 +695,12 @@ textarea.modal-callback-widget-form-input {
   border: none;
 }
 
-/*input:checked
-  + .modal-callback-widget-form-label-checkbox
-  + .modal-callback-widget-form-label-checkbox-icon {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}*/
-
-/*.custom-checkbox-icon {
-  /*fill: greenyellow;
-}
-/**/
-
-/*background-color: #404bbf;
-  border: none;*/
-
 .modal-callback-widget-form-label-checkbox {
   margin: 0;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-}
-
-.modal-callback-widget-form-label-checkbox-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  background-color: transparent;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  fill: transparent;
-  border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .modal-callback-form-submit {
@@ -790,7 +716,6 @@ textarea.modal-callback-widget-form-input {
   color: #ffffff;
   min-width: 169px;
   height: 56px;
-  /*width: 50%;/**/
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;

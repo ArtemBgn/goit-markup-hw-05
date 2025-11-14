@@ -56,7 +56,7 @@ img {
 
 header .container {
   display: flex;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
 }
 
 .logo {
@@ -129,6 +129,7 @@ header .container {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-list {
@@ -289,7 +290,7 @@ header .container {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 
 .box-icon-team-item {
@@ -315,6 +316,8 @@ header .container {
 
 .icon {
   fill: #f4f4fd;
+  height: 40px;
+  width: 40px;
 }
 
 .text {
@@ -399,12 +402,14 @@ header .container {
 }
 
 .vault .logo .logo-half {
+  font-weight: 700;
   color: #f4f4fd;
   margin-bottom: 16px;
 }
 
 .vault .logo {
   margin-bottom: 16px;
+  font-weight: 700;
 }
 
 .vault .text {
@@ -670,7 +675,7 @@ textarea.modal-callback-widget-form-input {
   display: none;
 }
 
-span {
+.modal-callback-widget-form-label-checkbox-icon {
   border: 1px solid rgba(46, 47, 66, 0.4);
   width: 16px;
   height: 16px;
@@ -689,7 +694,7 @@ span {
 .modal-callback-widget-form-group-checkbox:has(
     .modal-callback-widget-form-input-checkbox:checked
   )
-  span {
+  .modal-callback-widget-form-label-checkbox-icon {
   fill: #f4f4fd;
   background-color: #404bbf;
   border: none;

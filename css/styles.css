@@ -600,9 +600,9 @@ header .container {
   margin-bottom: 8px;
 }
 
-/*.fourth {
+.fourth {
   margin-bottom: 16px;
-}*/
+}
 
 .modal-callback-widget-form-label {
   font-size: 12px;
@@ -663,7 +663,7 @@ textarea.modal-callback-widget-form-input {
 }
 
 .modal-callback-widget-form-group-checkbox {
-  /*margin-bottom: 24px;*/
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
 }
@@ -738,7 +738,7 @@ textarea.modal-callback-widget-form-input {
 }
 
 .modal-callback-widget-form-label-checkbox-link {
-  display: inline-block;
+  /*display: inline-block;*/
   color: #4d5ae5;
   padding-bottom: 24px;
 }
